@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eats</title>
+</head>
+<body>
+    <div class="topo">
+        <div>
+            <h1>DrivenEats</h1>
+            <h2>Sua comida em 6 minutos</h2>
+        </div>
+    </div>
+    <div class="conteudo">
+        <div class="escolhas">
+            <div>
+                <h1>Primeiro, seu prato</h1>
+            </div>
+            <div class="opcoes comida">
+                <div class="pratos" onclick="selecionarcomida(this)">
+                    <img src="img/frango.jpeg" >
+                    <h2>Franguin ali na mesa</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 20.00</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pratos" onclick="selecionarcomida(this)">
+                    <img src="img/bife.jpeg" >
+                    <h2>Bife Arceus Bolado</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 16.00</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pratos" onclick="selecionarcomida(this)">
+                    <img src="img/macarrao.jpeg" >
+                    <h2>Miojin do Naruto</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 15.00</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pratos" onclick="selecionarcomida(this)">
+                    <img src="img/feijoada.jpeg" >
+                    <h2>Vira Laje</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 20.00</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="escolhas">
+            <div>
+                <h1>Agora, sua bebida</h1>
+            </div>
+            <div class="opcoes bebida">
+                <div class="pratos" onclick="selecionarbebida(this)">
+                    <img src="img/penaareia.jpeg" >
+                    <h2>Pé na Areia</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 10.00</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pratos" onclick="selecionarbebida(this)">
+                    <img src="img/caipirinha.jpeg" >
+                    <h2>Caipirinha</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 11.50</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pratos" onclick="selecionarbebida(this)">
+                    <img src="img/coco.jpeg" >
+                    <h2>Água de coco</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 4.99</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pratos" onclick="selecionarbebida(this)">
+                    <img src="img/cerveja.jpeg" >
+                    <h2>Cervejinha</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 6.00</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="escolhas">
+            <div>
+                <h1>Por último, sua sobremesa</h1>
+            </div>
+            <div class="opcoes sobremesa">
+                <div class="pratos" onclick="selecionarsobremesa(this)">
+                    <img src="img/pudim.jpeg" >
+                    <h2>Pudim amassado</h2>
+                    
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 9.99</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pratos" onclick="selecionarsobremesa(this)">
+                    <img src="img/limao.jpeg" >
+                    <h2>Torta de rindo muito</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 15.50</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+                <div class="pratos" onclick="selecionarsobremesa(this)">
+                    <img src="img/brigadeiro.jpeg" >
+                    <h2>Brigadeiro</h2>
+                    <h3>Descrição maneirinha de um pedido topzada</h3>
+                    <h4>R$<R1> 3.99</R1></h4>
+                    <ion-icon name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="bot">
+        <div class="botao">
+                <h1>Selecione os 3 itens para fechar o pedido</h1>
+        </div>
+            <a class="confirmacao remove" href="." onclick="zapzap()" target="_blank">
+                <h1>Fechar pedido</h1>
+            </a>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
